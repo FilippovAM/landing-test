@@ -496,8 +496,7 @@
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var container = document.getElementById('animation_container');
-            var hammer = new Hammer(container);
+            var hammer = new Hammer(document.body);
             hammer.get('pinch').set({enable: true});
             hammer.on('pinch', function (e) {
                 e.preventDefault();
